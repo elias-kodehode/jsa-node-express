@@ -7,10 +7,6 @@ const port = 8000;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send({ test: "hello"});
-});
-
 app.use("/users",userRouter);
 
 app.listen(port, () => {
